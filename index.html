@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WARNING</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                display: flex;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+            .toggle-mode {
+                background-color: white;
+                color: black;
+            }
+        </style>    
+    </head>
+    <body>
+        <table cellpadding="25">
+            <tr>
+                <td>
+                    <img id="logo" alt="logo" src="images/logo-dark.png" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <button onclick="toggle()">DO NOT PUSH</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        function toggle() {
+            toggleMode();
+            toggleImage();
+        }
+        function toggleMode() {
+            document.body.classList.toggle("toggle-mode");
+        }
+        function toggleImage() {
+            const logoDark = "images/logo-dark.png";
+            const logoLight="images/logo-light.png";
+            const image = document.getElementById("logo");
+            image.src = image.src.endsWith(logoDark)
+                ? image.src.replace(logoDark, logoLight)
+                : image.src.replace(logoLight, logoDark);
+            }
+    </script>
+</html>
