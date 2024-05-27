@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>UNDER CONSTRUCTION</title>
+        <title>WARNING</title>
+        <script>
+            function toggleMode() {
+                document.body.classList.toggle("toggle-mode");
+            }
+        </script>
         <style>
             body {
-                text-align: center;
+                background-color: black;
+                color: white;
+                
+                display: flex;
+                min-height: 100vh;
+                align-items: center;
+                justify-content: center;
+            }
+            .toggle-mode {
                 background-color: white;
                 color: black;
             }
-            .dark-mode {
-                background-color: black;
-                color: white;
-            }
-        </style>
+        </style>    
     </head>
     <body>
-        <p>
-            <img id="logo" src="images/logo-light.png">
-        </ps>
-        <p>
-            UNDER CONSTRUCTION
-        </p>
-        <p>
-            <button onclick="toggleDarkMode()">Dark Mode</button>
-        </p>
-        <script type="text/javascript">
-            function toggleDarkMode() {
-                document.body.classList.toggle("dark-mode");
-                document.getElementById("logo").src = document.getElementById("logo").src.endsWith("logo-light.png")
-                    ? document.getElementById("logo").src.replace("logo-light.png", "logo-dark.png")
-                    : document.getElementById("logo").src.replace("logo-dark.png", "logo-light.png");
-            }
-        </script>
+        <div>
+            <button onclick="toggleMode()">DO NOT PUSH THIS</button>
+        </div>
     </body>
 </html>
