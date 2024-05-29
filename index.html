@@ -2,16 +2,10 @@
 <html>
     <head>
         <title>WARNING</title>
-        <script>
-            function toggleMode() {
-                document.body.classList.toggle("toggle-mode");
-            }
-        </script>
         <style>
             body {
                 background-color: black;
                 color: white;
-                
                 display: flex;
                 min-height: 100vh;
                 align-items: center;
@@ -24,8 +18,34 @@
         </style>    
     </head>
     <body>
-        <div>
-            <button onclick="toggleMode()">DO NOT PUSH</button>
-        </div>
+        <table cellpadding="25">
+            <tr>
+                <td>
+                    <img id="logo" alt="logo" src="images/logo-dark.png" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <button onclick="toggle()">DO NOT PUSH</button>
+                </td>
+            </tr>
+        </table>
     </body>
+    <script>
+        function toggle() {
+            toggleMode();
+            toggleImage();
+        }
+        function toggleMode() {
+            document.body.classList.toggle("toggle-mode");
+        }
+        function toggleImage() {
+            const logoDark = "images/logo-dark.png";
+            const logoLight="images/logo-light.png";
+            const image = document.getElementById("logo");
+            image.src = image.src.endsWith(logoDark)
+                ? image.src.replace(logoDark, logoLight)
+                : image.src.replace(logoLight, logoDark);
+            }
+    </script>
 </html>
