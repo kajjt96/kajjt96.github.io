@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sandbox/bug-blaster/static/css/main.a954dff6.css",
+    "main.js": "/sandbox/bug-blaster/static/js/main.f9970886.js",
+    "static/js/453.79357b04.chunk.js": "/sandbox/bug-blaster/static/js/453.79357b04.chunk.js",
+    "index.html": "/sandbox/bug-blaster/index.html",
+    "main.a954dff6.css.map": "/sandbox/bug-blaster/static/css/main.a954dff6.css.map",
+    "main.f9970886.js.map": "/sandbox/bug-blaster/static/js/main.f9970886.js.map",
+    "453.79357b04.chunk.js.map": "/sandbox/bug-blaster/static/js/453.79357b04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a954dff6.css",
+    "static/js/main.f9970886.js"
+  ]
+}
